@@ -9,12 +9,21 @@
 }
 
 body {
-    background: -webkit-linear-gradient(90deg,#1678f3,#0099ba,#1678f3); background: linear-gradient(90deg,#1678f3,#0099ba,#1678f3);
+    background: -webkit-linear-gradient(90deg,#1678f3,#0099ba,#1678f3); 
+    background: linear-gradient(90deg,#1678f3,#0099ba,#1678f3);
+
+    line-height: 30px;
 
 }
 
 .title {
     font-size: 45px;
+    color: #f8d9f1;
+    font-family: 'VAG World Bold';
+}
+
+.subtitle {
+    font-size: 22px;
     color: #f8d9f1;
     font-family: 'VAG World Bold';
 }
