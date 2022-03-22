@@ -9,8 +9,8 @@
 }
 
 body {
-    background: -webkit-linear-gradient(90deg,#1678f3,#0099ba,#1678f3); 
-    background: linear-gradient(90deg,#1678f3,#0099ba,#1678f3);
+    background: -webkit-linear-gradient(90deg,#1678f3,#0099ba); 
+    background: linear-gradient(90deg,#1678f3,#0099ba);
 
     line-height: 30px;
 
