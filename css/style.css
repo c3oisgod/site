@@ -8,6 +8,7 @@
 		url('../fonts/vag_world_bold.svg#vag_world_bold') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -22,15 +23,10 @@ body {
 }
 
 .gradient {
-    font-size: 30px;
-    margin: 0px;
-    opacity: 0.9;
-    display: inline-block;
-    position: relative;
-    color: #000;
-    width: 100%;
-    background: #e2dee1;
-    
+    font-size: 35px;
+    margin-top: 0px;
+    opacity: 1;
+    color: #000;  
 }
 
 .gradient::before {
@@ -47,13 +43,53 @@ body {
     mix-blend-mode: screen;
 }
 
-.sec-text {
-    margin-left: 13px
-}
 
 .title {
     text-align: center;
     color: #e2dee1;
     font-size: 40px;
 }
+
+.navWrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fffdfe;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    opacity: 0.85;
+    color: white;
+    overflow: hidden;
+    width: 100%;
+}
+
+.logoWrap {
+    padding: 0;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+}
+    .li {
+        opacity: 1;
+        list-style-type: none;
+        color: ;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .parent {
+        margin: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .parent-two {
+        margin-top: 19px;
+    }
+
+
+
 
