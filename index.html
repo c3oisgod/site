@@ -17,21 +17,27 @@
                 <span class="gradient">Рэхим итегез!</span>
             </div>
             <ul class="navigation">
-                <li class="parent" 
-                data-aos="fade-up"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="1000">
-                    <a class="link" href="#">
+                <li class="parent" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                    <a class="login" href="#">
                         <i class="fa fa-user fa-fw" style="font-size: 2.08em"></i>
-                    </a>
+                    </a>               
+                    <div class="hidden-form">
+                        <ul class="sub-parent">
+                            <form action="#">
+                                <p>
+                                    <input type="text" name="login" placeholder="Логин" size="18" hidden/></p>
+                                    <p><input type="text" name="password" placeholder="Пароль" size="18" hidden></p>
+                                    <p>
+                                        <button type="submit" hidden>Войти</button>
+                                        <button type="reset" hidden>Отмена</button>
+                                    </p>
+                                </p>
+                            </form>
+                        </ul>
+                    </div>
                 </li>
-                <li class="parent-two" 
-                data-aos="fade-down"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="1000">
-                    <a class="link" href="#">
+                <li class="parent-two" data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                    <a class="menu" href="#">
                         <i class="fa fa-bars" style="font-size: 2.25em"></i>
                     </a>
                 </li>
@@ -42,6 +48,7 @@
         <script>
             AOS.init();
         </script>
+        <script src="anim.js"></script>
     </body>
 </html>
  
