@@ -24,6 +24,10 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#1678f3, endColorstr=#0099ba,GradientType=1);
 }
 
+.top {
+    background-color: var(--primary);
+}
+
 .gradient {
     font-size: 33px;
     margin-top: 0px;
@@ -50,7 +54,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 13px;
     background-color: #ece6e6;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
     opacity: 0.85;
@@ -76,20 +80,23 @@ body {
 }
 
 .parent {
-    margin: 10px;
-    margin-top: 20px;
+    text-shadow: 2px 5px 5px rgb(59, 59, 59);
+    margin-right: 0;
+    margin-top: 15px;
     cursor: pointer;
     color: #000
 }
 
 .parent-two {
-    margin-top: 19px;
+
+    margin-top: 14px;
     color: #000;
 
 }
 
 .login {
-    margin: 10px;
+    font-size: 16px;
+    margin: 0px;
     margin-top: 20px;
     cursor: pointer;
     color: #000
@@ -97,11 +104,16 @@ body {
 
 .menu {
     margin-top: 19px;
+    margin: 10px;
     color: #000;
 }
 
 .sub-parent {
     display: block;
+}
+
+.fa-bars {
+    text-shadow: 2px 5px 5px rgb(59, 59, 59)
 }
 
 .login:hover{
