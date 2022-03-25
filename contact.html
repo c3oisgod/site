@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Watches | Интернет-магазин часов</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ab72df5f-6b6e-471e-836e-06d112de75cd&lang=en_US"
+        type="text/javascript">
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container flex-container">
+            <div class="logo header-logo">
+                <a href="/">
+                    <img src="img/logo.png" />
+                </a>
+            </div>
+            <div class="menu header-menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                Бренды
+                            </a>
+                        </li>
+                        <li>
+                            <a href="product.html">
+                                Аксессуары
+                            </a>
+                        </li>
+                        <li>
+                            <a href="shop.html">
+                                Распродажа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Контакты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Отзывы
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cart">
+                <span class="cart-info">Моя корзина:</span>
+                <img src="img/basket.png" />
+                <span class="count">2</span>
+            </div>
+        </div>
+    </header>
+    <div class="search">
+        <form>
+            <input name="search" type="text" required placeholder="Поиск по каталогу" />
+            <button type="submit">
+                <i class="material-icons">search</i>
+            </button>
+        </form>
+    </div>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="#">
+                главная
+            </a>
+            <i class="sep material-icons">
+                keyboard_arrow_right
+            </i>
+            <span>
+                контакты
+            </span>
+        </div>
+    </div>
+
+    <section class="section section-contact">
+        <div class="container">
+            <div class="section-title">
+                Контакты
+            </div>
+            <div class="section-contact_list">
+                <div class="section-contact_list__item">
+                    <div class="img-wrap" style="background-image: url(img/2.jpg);">
+                        <div id="map2"></div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-address">
+                            <div class="contact-info_title">
+                                Наш магазин расположен по адресу:
+                            </div>
+                            <p>
+                                <i class="material-icons">
+                                    navigation
+                                </i>
+                                г.Зеленодольск, Республика Татарстан, ТЦ "Мирный", 3 этаж
+                                (вход в ТЦ "Мирный" со стороны остановки "Автовокзал Мирный")
+                                Салон-магазин часов №1 в Зеленодольске "Лучшие часы Амира"
+                            </p>
+                        </div>
+                        <div class="contact-phones">
+                            <div class="contact-info_title">
+                                Телефоны
+                            </div>
+                            <div class="contact-info_phones">
+                                <p>
+                                    Мегафон
+                                    <span>
+                                        +7 (937) 527-**-*0
+                                    </span>
+                                </p>
+                                <p>
+                                    МТС
+                                    <span>
+                                        +7 (927) 533-43-21
+                                    </span>
+                                </p>
+                                <p>
+                                    Домашний
+                                    <span>
+                                        +(84371)53322
+                                    </span>
+                                </p>
+                                <a href="#" class="callback-btn">
+                                    <i class="material-icons">
+                                        local_phone
+                                    </i>
+                                    Обратный звонок
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-email">
+                            <div class="contact-info_title">
+                                Эл.почта:
+                            </div>
+                            <div class="contact-info_address">  
+                                <p>
+                                    <i class="material-icons">
+                                        mail
+                                    </i>
+                                    amir-air@mail.ru
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-contact_list__item">
+                    <div class="contact-info">
+                        <div class="contact-legalinfo">
+                            <div class="contact-info_title">
+                                Юридическая информация:
+                            </div>
+                            <ul>
+                                <li>Индивидуальный предпиниматель Ихсанов А.И.</li>
+                                <li>Свидетельство о регистрации №1423432 от 27.03.2022</li>
+                                <li>Регистрирующий орган - Зеленодольский</li>
+                                <li>Юр. адрес: г.Зеленодольск, улица Королёва, 1А, корп. 1</li>
+                                <li>Дата регистрации интернет-магазина в торговом реестре 27.03.2022</li>
+                                <li>Регистрационный номер 124124</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="img-wrap" style="background-image: url(img/q.jpg);">
+                    </div>
+                </div>
+
+                <div class="section-contact_list__item">
+                    <div class="img-wrap" style="background-image: url(img/q.jpg);">
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-payment">
+                            <div class="contact-info_title">
+                                Способы оплаты:
+                            </div>
+                            <ul>
+                                <li>Банковская пластиковая карточка</li>
+                                <li>Наличный расчет</li>
+                            </ul>
+                            <a href="#" download class="contact-payment_document">
+                                Образцы документов, подтверждающие оплату
+                            </a>
+                        </div>
+                        <div class="contact-schedule">
+                            <div class="contact-info_title">
+                                Время работы магазина:
+                            </div>
+                            <p>
+                                Вторник-воскресенье
+                                <span>
+                                    c 11:00 до 20:00
+                                </span>
+                            </p>
+                            <p>
+                                Интернет-магазин работает
+                                <span>
+                                    c 10:00 до 20:00 (без выходных)
+                                </span>
+                            </p>
+                            <p>
+                                Заказы онлайн через <a href="#">форму обратной связи принимаем</a>
+                                <span>
+                                    круглосуточно
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-top">
+                <div class="flex-container">
+
+                    <div class="footer-time">
+                        <div class="footer-time_title">
+                            Время работы магазина:
+                        </div>
+                        <div class="footer-time_schedule">
+                            Вторник - Воскресенье с <span>11:00</span> до <span>20:00</span>
+                        </div>
+                    </div>
+
+                    <div class="footer-subcribe">
+                        <span class="footer-subscribe_title">
+                            Оставьте свой <span>email</span>, чтобы получать индивидуальные
+                            <span>скидки</span> и специальные <span>предложения</span>
+                        </span>
+                        <form>
+                            <input name="email" type="email" placeholder="Ваш email" required />
+                            <input type="submit" value="отправить" />
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-menus">
+                <div class="flex-container">
+
+                    <div class="footer-menus_item footer-social">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src='img/vk.svg' />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src='img/instagram.svg' />
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <img src='img/facebook.svg' />
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menus_item">
+                        <div class="footer-menus_item__title">
+                            Best Watches
+                        </div>
+                        <ul>
+                            <li><a href="index.html">Бренды</a></li>
+                            <li><a href="product.html">Аксессуары</a></li>
+                            <li><a href="shop.html">Распродажа</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Условия соглашения</a></li>
+                            <li><a href="#">Возврат товара</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menus_item">
+                        <div class="footer-menus_item__title">
+                            Преимущества
+                        </div>
+                        <ul>
+                            <li><a href="#">Официальный дилер</a></li>
+                            <li><a href="#">Только оригиналы</a></li>
+                            <li><a href="#">Весь товар в наличии</a></li>
+                            <li><a href="#">Официальная гарантия</a></li>
+                            <li><a href="#">Бесплатная доставка</a></li>
+                            <li><a href="#">Дисконтная программа</a></li>
+                            <li><a href="#">Быстрый сервис</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menus_item footer-about">
+                        <div class="footer-menus_item__title">
+                            О нас
+                        </div>
+                        <p>
+                            Лучшие часы в Зеленодольске!
+                        </p>
+                        <a href="#" class="more-about-btn">
+                            Читать больше
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="flex-container">
+                    <div class="footer-logo">
+                        <img src="img/logo2.png" />
+                    </div>
+
+                    <div class="footer-year">
+                        inc. 2020-2022
+                    </div>
+
+                    <span>
+                        &copy; Все права и <span class="amir">ПРОЕКТ</span> защищены
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <div class="scroll-top">
+        <i class="material-icons">
+            keyboard_arrow_up
+        </i>
+    </div>
+    <script>
+        /* Yandex Map */
+        ymaps.ready(init);
+
+        function init() {
+            var myMap = new ymaps.Map(
+                "map2",
+                {
+                    center: [55.85360956797697,48.56569752392678],
+                    zoom: 18
+                },
+                {
+                    searchControlProvider: "yandex#search"
+                }
+            );
+
+            myMap.geoObjects.add(
+                new ymaps.Placemark(
+                    [55.85360956797697,48.56569752392678],
+                    {
+                        balloonContent:
+                            '<strong>Салон-магазин часов "Лучшие часы Амира"</strong>'
+                    },
+                    {
+                        preset: "islands#dotIcon",
+                        iconColor: "#eb4f63"
+                    }
+                )
+            );
+        }
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
