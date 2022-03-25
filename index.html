@@ -287,7 +287,6 @@
                 г.Зеленодольск, Республика Татарстан ТЦ "Мирный", Салон-магазин "Лучшие часы", 3 этаж
             </div>
             <div id="map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A338fb85a8b80d69e783aef7991f4e86c7ed77dfd2de03e37540b8b0e297ec209&amp;width=600&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
             <div class="section-contact_form">
                 <form>
@@ -498,7 +497,37 @@
             keyboard_arrow_up
         </i>
     </div>
-    
+    <script>
+        /* Yandex Map */
+        ymaps.ready(init);
+
+        function init() {
+            var myMap = new ymaps.Map(
+                "map",
+                {
+                    center: [55.85360956797697,48.56569752392678],
+                    zoom: 18
+                },
+                {
+                    searchControlProvider: "yandex#search"
+                }
+            );
+
+            myMap.geoObjects.add(
+                new ymaps.Placemark(
+                    [55.85360956797697,48.56569752392678],
+                    {
+                        balloonContent:
+                            '<strong>Салон-магазин часов "Лучшие часы Амира"</strong>'
+                    },
+                    {
+                        preset: "islands#dotIcon",
+                        iconColor: "#eb4f63"
+                    }
+                )
+            );
+        }
+    </script>
     <script src="js/script.js"></script>
 </body>
 
