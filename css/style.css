@@ -16,12 +16,11 @@
     font-family: 'VAG World Bold', sans-serif;
 }
 
-
+html,
 body {
     background: -moz-linear-gradient(90deg,#0099ba, #1678f3,#0099ba);
     background: -webkit-linear-gradient(90deg,#1678f3,#0099ba); 
     background: linear-gradient(90deg,#1678f3, #0099ba);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#1678f3, endColorstr=#0099ba,GradientType=1);
 }
 
 .top {
@@ -56,11 +55,12 @@ body {
     justify-content: space-between;
     padding: 13px;
     background-color: #ece6e6;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
     opacity: 0.85;
     color: white;
     overflow: hidden;
     width: 100%;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
 .logoWrap {
@@ -116,12 +116,57 @@ body {
     text-shadow: 2px 5px 5px rgb(59, 59, 59)
 }
 
-.login:hover{
+.login:hover {
    color: rgb(124, 124, 124);
+}
+
+.login:active {
+    color: #000;
 }
 
 .menu:hover {
     color: rgb(124, 124, 124);
+}
+
+.menu:active {
+    color: #000
+}
+
+.text-wrap {
+    justify-content: space-between;
+    text-align:left;
+    box-shadow: 5px 4px 44px -12px #000000;
+    line-height: 120px;
+    padding-left: 10%;
+    overflow: hidden;
+    background-color: white;
+    opacity: 0.95;
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    display: block;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.gradient-abz {
+    font-size: 25px;
+    margin-top: 0px;
+    opacity: 1;
+    color: #000;  
+}
+
+.gradient-abz::before {
+    content: '';
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-linear-gradient(90deg,#1678f3,#0099ba); 
+    background: linear-gradient(90deg,#1678f3,#0099ba);
+    pointer-events: none;
+    mix-blend-mode: screen;
 }
 
 
