@@ -138,6 +138,7 @@ body {
     box-shadow: 5px 4px 44px -12px #000000;
     line-height: 120px;
     padding-left: 10%;
+    top: 95%;
     overflow: hidden;
     background-color: white;
     opacity: 0.95;
@@ -148,14 +149,9 @@ body {
     border-radius: 15px 15px 15px 15px;
 }
 
-.gradient-abz {
-    font-size: 25px;
-    margin-top: 0px;
-    opacity: 1;
-    color: #000;  
-}
 
-.gradient-abz::before {
+
+.text-wrap::before {
     content: '';
     display: flex;
     position: absolute;
