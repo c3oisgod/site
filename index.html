@@ -54,12 +54,28 @@
                             </a>
                         </li>
                         <li>
-                            <a id="testing" href="#">
+                            <a id="o_nas" href="#">
+                                <script type="text/javascript">
+                                    $(document).ready(function() {
+                                        toastr.options.timeOut = 1500; // 1.5s
+                                        $('#o_nas').click(function() {
+                                        toastr.error('Будет в скором будущем!');
+                                        });
+                                    });
+                                </script>
                                 О нас
                             </a>
                         </li>
                         <li>
-                            <a id="testing" href="#">
+                            <a id="feedback" href="#">
+                                <script type="text/javascript">
+                                    $(document).ready(function() {
+                                        toastr.options.timeOut = 1500; // 1.5s
+                                        $('#feedback').click(function() {
+                                        toastr.error('Будет в скором будущем!');
+                                        });
+                                    });
+                                </script>
                                 Отзывы
                             </a>
                         </li>
@@ -122,8 +138,16 @@
                             </a>
                         </li>
                         <li>
-                            <a id="testing" href="#">
+                            <a id="tests" href="#">
                                 <img src="img/vk.png" />
+                                <script type="text/javascript">
+                                    $(document).ready(function() {
+                                        toastr.options.timeOut = 1500; // 1.5s
+                                        $('#tests').click(function() {
+                                        toastr.error('Будет в скором будущем!');
+                                        });
+                                    });
+                                </script>
                                 <span>Группа в Вконтакте</span>
 
                             </a>
@@ -394,7 +418,16 @@
                         <textarea name="message" rows="2" placeholder="Ваше сообщение" required></textarea>
                     </div>
                     <div class="button btn-submit">
-                        <input type="submit" value="Отправить" />
+                        <input id="user_feedback" type="submit" value="Отправить" />
+                        <script type="text/javascript">
+                            $(document).ready(function() {
+                                toastr.options.timeOut = 1500; // 1.5s
+                                toastr.options.progressBar = true;
+                                $('#user_feedback').click(function() {
+                                    toastr.success('Спасибо за обратную связь!');
+                                });
+                            });
+                        </script>
                     </div>
                 </form>
             </div>
@@ -550,14 +583,6 @@
         }
     </script>
     <script src="js/script.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            toastr.options.timeOut = 1500; // 1.5s
-            $('#testing').click(function() {
-            toastr.error('Будет в скором будущем!');
-            });
-        });
-    </script>
 </body>
 
 </html>
