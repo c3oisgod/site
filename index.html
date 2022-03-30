@@ -54,12 +54,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a id="testing" href="#">
                                 О нас
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a id="testing" href="#">
                                 Отзывы
                             </a>
                         </li>
@@ -90,7 +90,15 @@
                 <div class="section-main_sidebar">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a id="buysell" href="#">
+                                <script type="text/javascript">
+                                    $(document).ready(function() {
+                                        toastr.options.timeOut = 1500; // 1.5s
+                                        $('#buysell').click(function() {
+                                        toastr.error('Заказы скоро будут доступны!');
+                                        });
+                                    });
+                                    </script>
                                 <img src="img/phone.png" />
                                 <span>Прием заказов</span>
 
@@ -102,9 +110,9 @@
                                 <script type="text/javascript">
                                 $(document).ready(function() {
                                     toastr.options.timeOut = 1500; // 1.5s
-                                    toastr.info('Page Loaded!');
-                                    $('#').click(function() {
-                                    toastr.success('Click Button');
+                                    toastr.warning('Сайт находится в разработке.\nВозможны ошибки.');
+                                    $('#mylogin').click(function() {
+                                    toastr.error('Данный раздел находится в разработке!');
                                     });
                                 });
                                 </script>
@@ -114,7 +122,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a id="testing" href="#">
                                 <img src="img/vk.png" />
                                 <span>Группа в Вконтакте</span>
 
@@ -542,6 +550,14 @@
         }
     </script>
     <script src="js/script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            toastr.options.timeOut = 1500; // 1.5s
+            $('#testing').click(function() {
+            toastr.error('Будет в скором будущем!');
+            });
+        });
+    </script>
 </body>
 
 </html>
