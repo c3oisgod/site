@@ -15,6 +15,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ab72df5f-6b6e-471e-836e-06d112de75cd&lang=en_US"
         type="text/javascript">
     </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -92,10 +93,25 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a id="mylogin" href="#">
+                                <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      
+                                <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+                                
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+                                
+                                <script type="text/javascript">
+                                $(document).ready(function() {
+                                    toastr.options.timeOut = 1500; // 1.5s
+                                    toastr.info('Page Loaded!');
+                                    $('#').click(function() {
+                                    toastr.success('Click Button');
+                                    });
+                                });
+                                </script>
                                 <img src="img/profile.png" />
                                 <span>Мой кабинет</span>
-
+                                
                             </a>
                         </li>
                         <li>
@@ -278,40 +294,6 @@
             </div>
         </div>
     </section>
-    <section class="section section-contact">
-        <div class="container">
-            <div class="section-title">
-                Где нас найти?
-            </div>
-            <div class="section-contact_address">
-                г.Зеленодольск, Республика Татарстан ТЦ "Мирный", Салон-магазин "Лучшие часы", 3 этаж
-            </div>
-            <div id="map">
-            </div>
-            <div class="section-contact_form">
-                <form>
-                    <div class="form-title">
-                        Форма обратной связи
-                    </div>
-                    <div class="form-group">
-                        <input name="name" type="text" placeholder="Ваше имя" required />
-                    </div>
-                    <div class="form-group">
-                        <input name="phone" type="text" placeholder="Ваш телефон" required />
-                    </div>
-                    <div class="form-group">
-                        <input name="email" type="email" placeholder="Ваш email" required />
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" rows="3" required>Ваше сообщение</textarea>
-                    </div>
-                    <div class="button btn-submit">
-                        <input type="submit" value="Отправить" />
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
     <section class="section section-offers">
         <div class="container">
             <div class="section-title">
@@ -377,12 +359,44 @@
             </div>
         </div>
     </section>
+    <section class="section section-contact">
+        <div class="container">
+            <div class="section-title">
+                Где нас найти?
+            </div>
+            <div class="section-contact_address">
+                г.Зеленодольск, Республика Татарстан ТЦ "Мирный", Салон-магазин "Лучшие часы", 3 этаж
+            </div>
+            <div id="map">
+            </div>
+            <div class="section-contact_form">
+                <form>
+                    <div class="form-title">
+                        Форма обратной связи
+                    </div>
+                    <div class="form-group">
+                        <input name="name" type="text" placeholder="Ваше имя" required />
+                    </div>
+                    <div class="form-group">
+                        <input name="phone" type="text" placeholder="Ваш телефон" required />
+                    </div>
+                    <div class="form-group">
+                        <input name="email" type="email" placeholder="Ваш email" required />
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="2" placeholder="Ваше сообщение" required></textarea>
+                    </div>
+                    <div class="button btn-submit">
+                        <input type="submit" value="Отправить" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="container">
-
             <div class="footer-top">
                 <div class="flex-container">
-
                     <div class="footer-time">
                         <div class="footer-time_title">
                             Время работы магазина:

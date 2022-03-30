@@ -142,7 +142,7 @@ header .cart .count {
 /* Box Search */
 .search {
   width: 30%;
-  margin-right: 60px;
+  margin-right: 366px;
   margin-left: auto;
   display: flex;
   position: relative;
@@ -580,17 +580,18 @@ header .cart .count {
 
 /* Section Contact */
 .section-contact {
-  padding: 60px 0;
-  position: relative;
+  padding: 20px 0;
+  position:relative;
 }
 .section-contact .section-contact_address {
   margin: 20px 0;
 }
 .section-contact .section-contact_form {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  z-index: 2;
+  position: fixed;
+  opacity: 0.95 ;
+  right: 0;
+  bottom: 4%;
+  z-index: 1;
   min-width: 400px;
 }
 .section-contact .section-contact_form form {
