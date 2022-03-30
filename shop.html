@@ -507,6 +507,14 @@
         </i>
     </div>
     <script src="js/script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            toastr.options.timeOut = 1500; // 1.5s
+            $('#testing').click(function() {
+            toastr.error('Будет в скором будущем!');
+            });
+        });
+    </script>
 </body>
 
 </html>
